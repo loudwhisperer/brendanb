@@ -1,0 +1,56 @@
+
+#hero {
+    margin: auto;
+    padding: 20px;
+    border-bottom:5px solid #000;
+    background-color: #000;
+}
+
+#hero h1{
+color: #fff;
+font-weight: lighter;
+}
+
+#hero .toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 1445px;
+}
+
+.toggle-btn span {
+    width: 45px;
+    height: 4px;
+    background: #fff;
+    display: block;
+    margin-top: 4px;
+}
+
+#sidenav{
+    position:absolute;
+    width:300px;
+    height:100%;
+    background: #000;
+    left: -300px;
+    transition: .4s;
+    z-index: 5;
+    border-right:5px solid #000;
+}
+
+#sidenav.active{
+    left: 0;
+}
+
+#sidenav ul li{
+    padding: 20px 24px;
+}
+
+#sidenav ul li:hover {
+    border: 3px solid #fff;
+}
+
+#sidenav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+}
+

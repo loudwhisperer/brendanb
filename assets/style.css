@@ -11,18 +11,73 @@ color: #fff;
 font-weight: lighter;
 }
 
+#hero input{
+   display: none; 
+   visibility: hidden;  
+}
+
 #hero .toggle-btn {
     position: absolute;
     top: 20px;
-    left: 1445px;
+    left: 1445px; 
 }
 
-.toggle-btn span {
-    width: 45px;
+ .toggle-btn .common {
+    position:absolute; 
+    width: 25px;
     height: 4px;
+    top: 5px;
     background: #fff;
-    display: block;
-    margin-top: 4px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle-btn .top_line{
+    top: 30%;
+    left: 50%;
+    top: 10px;
+    /* top:30%;
+    left:50%; */
+    transform: translate(-50%,-50%);
+}
+
+.toggle-btn .middle_line {
+    top: 50%;
+    left: 50%;
+    top: 20px;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+}
+
+.toggle-btn .bottom_line {
+    top: 70%;
+    left: 50%;
+    top: 30px;
+    /* top: 70%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+}
+
+#option:checked ~ .top_line{
+    left:2px;
+    top:14px;
+    width:25px;
+    transform:rotate(-45deg);
+    background: #fff;
+}
+
+#option:checked~ .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+    background: #fff;
+}
+
+#option:checked~ .middle_line{
+   opacity: 0;
+    transform: translateX(20deg);
 }
 
 #sidenav{

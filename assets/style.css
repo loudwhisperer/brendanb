@@ -1,5 +1,11 @@
-
+header{
+    border-bottom:5px solid grey;
+    margin-bottom: 10px;
+    z-index: 5;
+}
 #hero {
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
     padding: 20px;
     border-bottom:5px solid #000;
@@ -22,7 +28,7 @@ font-weight: lighter;
     left: 1445px; 
 }
 
- .toggle-btn .common {
+.toggle-btn .common {
     position:absolute; 
     width: 25px;
     height: 4px;
@@ -67,7 +73,7 @@ font-weight: lighter;
     background: #fff;
 }
 
-#option:checked~ .bottom_line{
+#option:checked ~ .bottom_line{
     left: 2px;
     top: 14px;
     width: 25px;
@@ -75,13 +81,17 @@ font-weight: lighter;
     background: #fff;
 }
 
-#option:checked~ .middle_line{
+#option:checked ~ .middle_line{
    opacity: 0;
     transform: translateX(20deg);
 }
 
 #sidenav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     position:absolute;
+    top: 74px;
     width:300px;
     height:100%;
     background: #000;
@@ -109,3 +119,274 @@ font-weight: lighter;
     font-size: 20px;
 }
 
+@media only screen and (min-width: 350px) and (max-width: 500px) {
+    header {
+            border-bottom: 5px solid grey;
+            margin-bottom: 10px;
+            z-index: 5;
+        }
+    #hero {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 15px;
+        border-bottom: 5px solid #000;
+        background-color: #000;
+    }
+
+    #hero h1 {
+        color: #fff;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    #hero input {
+        display: none;
+        visibility: hidden;
+    }
+
+    #hero .toggle-btn {
+        position: absolute;
+        top: 20px;
+        left: 325px;
+    }
+
+    .toggle-btn .common {
+        position: absolute;
+        width: 20px;
+        height: 3px;
+        top: 20px;
+        background: #fff;
+        border-radius: 50px;
+        transition: 0.3s ease;
+    }
+
+    .toggle-btn .top_line {
+        left: 50%;
+        top: 5px;
+        /* top:30%;
+        left:50%; */
+        transform: translate(-50%, -50%);
+    }
+
+    .toggle-btn .middle_line {
+        left: 50%;
+        top: 10px;
+        /* top: 50%;
+        left: 50%; */
+        transform: translate(-50%, -50%);
+    }
+
+    .toggle-btn .bottom_line {
+        top: 70%;
+        left: 50%;
+        /* top: 70%;
+        left: 50%; */
+        transform: translate(-50%, -50%);
+    }
+
+    #option:checked~.top_line {
+        left: 2px;
+        top: 4px;
+        width: 16px;
+        transform: rotate(-45deg);
+        background: #fff;
+    }
+
+    #option:checked~.bottom_line {
+        left: 2px;
+        top: 4px;
+        width: 16px;
+        transform: rotate(45deg);
+        background: #fff;
+    }
+
+    #option:checked~.middle_line {
+        opacity: 0;
+        transform: translateX(20deg);
+    }
+
+    #sidenav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 175px;
+        height: 100%;
+        background: #000;
+        left: -175px;
+        transition: .4s;
+        z-index: 5;
+        border-right: 5px solid #000;
+    }
+
+    #sidenav.active {
+        left: 0;
+    }
+
+    #sidenav ul li {
+        padding: 15px 18px;
+    }
+
+    #sidenav ul li:hover {
+        border: 3px solid #fff;
+    }
+
+    #sidenav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+    }
+}
+
+#portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 5px solid grey;
+    margin-bottom: 10px;
+}
+
+#portfolio h2{
+align-self: flex-start;
+margin: auto;
+padding: 20px;
+}
+
+#portfolio p{
+    margin: auto;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.horiseon-container{
+    max-width: 700px;
+    max-height: 700px;
+    float: right;
+    padding: 50px;
+}
+.horiseon-container img{
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid grey;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 925px) {
+    header {
+            border-bottom: 5px solid grey;
+            margin-bottom: 10px;
+            z-index: 5;
+        }
+    #hero {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            padding: 15px;
+            border-bottom: 5px solid #000;
+            background-color: #000;
+        }
+    
+    #hero h1 {
+            color: #fff;
+            font-weight: bolder;
+            font-size: 40px;
+        }
+    
+        #hero input {
+            display: none;
+            visibility: hidden;
+        }
+    
+        #hero .toggle-btn {
+            position: absolute;
+            top: 1px;
+            left: 700px;
+        }
+    
+        .toggle-btn .common {
+            position: absolute;
+            width: 45px;
+            height: 5px;
+            top: 5px;
+            background: #fff;
+            border-radius: 50px;
+            transition: 0.3s ease;
+        }
+    
+        .toggle-btn .top_line {
+            left: 50%;
+            top: 30px;
+            /* top:30%;
+        left:50%; */
+            transform: translate(-50%, -50%);
+        }
+    
+        .toggle-btn .middle_line {
+            left: 50%;
+            top: 40px;
+            /* top: 50%;
+        left: 50%; */
+            transform: translate(-50%, -50%);
+        }
+    
+        .toggle-btn .bottom_line {
+            top: 50px;
+            left: 50%;
+            /* top: 70%;
+        left: 50%; */
+            transform: translate(-50%, -50%);
+        }
+    
+        #option:checked~.top_line {
+            left: 1px;
+            top: 40px;
+            width: 40px;
+            transform: rotate(-45deg);
+            background: #fff;
+        }
+    
+        #option:checked~.bottom_line {
+            left: 1px;
+            top: 40px;
+            width: 40px;
+            transform: rotate(45deg);
+            background: #fff;
+        }
+    
+        #option:checked~.middle_line {
+            opacity: 0;
+            transform: translateX(20deg);
+        }
+    
+        #sidenav {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: absolute;
+            width: 400px;
+            height: 100%;
+            background: #000;
+            left: -400px;
+            transition: .4s;
+            z-index: 5;
+            border-right: 5px solid #000;
+        }
+    
+        #sidenav.active {
+            left: 0;
+        }
+    
+        #sidenav ul li {
+            padding: 20px 24px;
+        }
+    
+        #sidenav ul li:hover {
+            border: 3px solid #fff;
+        }
+    
+        #sidenav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 35px;
+        }
+}

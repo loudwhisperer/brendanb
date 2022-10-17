@@ -216,7 +216,7 @@ font-weight: lighter;
         background: #000;
         left: -175px;
         transition: .4s;
-        z-index: 5;
+        z-index: 5; 
         border-right: 5px solid #000;
     }
 
@@ -242,14 +242,14 @@ font-weight: lighter;
 #portfolio{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     border-bottom: 5px solid grey;
     margin-bottom: 10px;
 }
 
 #portfolio h2{
 align-self: flex-start;
-margin: auto;
 padding: 20px;
 }
 
@@ -264,6 +264,7 @@ padding: 20px;
     max-height: 700px;
     float: right;
     padding: 50px;
+    align-self: flex-end;
 }
 .horiseon-container img{
     max-width: 100%;

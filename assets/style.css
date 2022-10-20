@@ -168,6 +168,7 @@ header {
     border: 2px solid grey;
     padding: 10px;
 }
+/* begin styling for four boxes that will become other projects*/
 .portmenu {
   display: inline-flex;
   flex-wrap: wrap;
@@ -188,6 +189,7 @@ header {
   border: 2px solid white;
   margin-left: 10px;
 }
+/* end portfolio section styling */
 #about{
     padding: 50px;
 margin:auto;
@@ -202,7 +204,7 @@ margin: auto;
 flex: 0 0 50%;
 }
 
-
+/* begin styling for the about me page */
 #me img{
   border: 2px solid grey;
  max-width: 750px;
@@ -220,6 +222,7 @@ flex: 0 0 50%;
     line-height: 25px;
     text-align: center;
 }
+/* begin styling for contact me page */
 .form{
     display: flex;
     flex-direction: column;
@@ -232,7 +235,7 @@ flex: 0 0 50%;
 .form form{
     padding: 10px;
 }
-
+/* beginmedia queies to make things fit into different screen sizes */
 @media only screen and (min-width: 350px) and (max-width: 500px) {
   header {
     border-bottom: 5px solid grey;

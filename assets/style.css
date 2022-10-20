@@ -1,3 +1,4 @@
+/* Beggining of top with my name and menu icon */
 header {
   border-bottom: 5px solid grey;
   margin-bottom: 10px;
@@ -11,17 +12,17 @@ header {
   border-bottom: 5px solid #000;
   background-color: #000;
 }
-
+/* name styling */
 #hero h1 {
   color: #fff;
   font-weight: lighter;
 }
-
+/* checkbox to activate menu */
 #hero input {
   display: none;
   visibility: hidden;
 }
-
+/* menu button styling */
 #hero .toggle-btn {
   position: absolute;
   top: 20px;
@@ -64,7 +65,7 @@ header {
     left: 50%; */
   transform: translate(-50%, -50%);
 }
-
+/* side panel and toggle button connection */
 #option:checked ~ .top_line {
   left: 2px;
   top: 14px;
@@ -85,7 +86,8 @@ header {
   opacity: 0;
   transform: translateX(20deg);
 }
-
+/* end menu button styling */
+/* begin side navigation panel styling */
 #sidenav {
   display: flex;
   flex-direction: column;
@@ -104,7 +106,7 @@ header {
 #sidenav.active {
   left: 0;
 }
-
+/* navigation text styling */
 #sidenav ul li {
   padding: 20px 24px;
 }
@@ -117,6 +119,118 @@ header {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
+}
+/* end navigation text styling */
+/* portfolio section styling */
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 5px solid grey;
+  margin-bottom: 10px;
+}
+
+#portfolio h2 {
+  align-self: flex-start;
+  padding: 20px;
+}
+
+#portfolio p {
+  margin: auto;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+/* begin Horiseon 1st portfolio project styling */
+.horiseon-container {
+  max-width: 700px;
+  max-height: 700px;
+  float: right;
+  padding: 50px;
+  align-self: flex-end;
+  position: relative;
+}
+/* formats the image */
+.horiseon-container img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid grey;
+}
+/* formats the caption inside of it */
+.horiseon-container figcaption {
+  position: absolute;
+  bottom: 175px;
+  border: 2px solid white;
+  background-color: #fff;
+  margin-left: 10px;
+}
+.horiseon-container p{
+    border: 2px solid grey;
+    padding: 10px;
+}
+.portmenu {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 725px;
+  margin: auto;
+  padding: 5px;
+}
+.portmenu figure {
+  position: relative;
+  flex: 0 0 35%;
+  margin: 4px auto;
+  border: 3px solid;
+}
+.portmenu figcaption {
+  position: absolute;
+  bottom: 20px;
+  border: 2px solid white;
+  margin-left: 10px;
+}
+#about{
+    padding: 50px;
+margin:auto;
+border-bottom: 5px solid grey;
+}
+#me figure{
+   display: flex;
+   flex-wrap:wrap;
+flex-flow: row-reverse;
+justify-content: center;  
+margin: auto; 
+flex: 0 0 50%;
+}
+
+
+#me img{
+  border: 2px solid grey;
+ max-width: 750px;
+  max-height: 750px; 
+  align-self: flex-start;
+  clear: both;
+}
+
+#me figcaption{
+     align-self: flex-end;
+   margin-right: 10em;
+    border: 3px solid grey;
+    padding: 1em;
+    width: 25vw;
+    line-height: 25px;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form h3{
+    padding: 10px;
+    font-size: 30px;
+}
+.form form{
+    padding: 10px;
 }
 
 @media only screen and (min-width: 350px) and (max-width: 500px) {

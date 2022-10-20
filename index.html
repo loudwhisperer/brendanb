@@ -1,64 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
-    <script src="/script/sidenav.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Brendan Borowski</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <section id="hero">
+      <section id="hero">
         <h1>Brendan Borowski</h1>
-        <div class="toggle-btn"> 
-            <input id="option" type="checkbox" onclick="reveal()">
-            <label for="option" class="top_line common"></label>
-            <label for="option" class="middle_line common"></label>
-            <label for="option" class="bottom_line common"></label>
-        </div> 
-        </section>
-        <nav id="sidenav">
-            <ul>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
+        <div class="toggle-btn">
+          <input id="option" type="checkbox" onclick="reveal()" />
+          <label for="option" class="top_line common"></label>
+          <label for="option" class="middle_line common"></label>
+          <label for="option" class="bottom_line common"></label>
+        </div>
+      </section>
+      <nav id="sidenav">
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <article>
-                <p>Here are some projects i've done in the past</p>
-            </article>
-            <article>
-                <p>As well as ones i'm working on now</p>
-            </article>
-            <figure class="horiseon-container">
-                <a href="https://loudwhisperer.github.io/symmetrical-adventure-studies/" target="_blank">
-                <img src="./assets/images/Screen Shot 2022-10-16 at 8.16.36 PM.png" alt="Horiseon Business Solutions Code Refactor">
-                </a>
-                <figcaption>Horiseon Business Solutions Accesibility Re-factor</figcaption>
-            </figure>
-            <aside>
-                <p>Here I was given the starter code and asked to update it to<br>
-                current semantic HTML standards to better Search Engine Optimization<br>
-                and make adding alt attributes to each image easy for anyone.<br>
-                We then went ahead and added alt attributes to each image and added<br>
-                comments to the styling so it was easy to follow for those working on it<br>
-                after myself.
-                </p>
-            </aside>
-        </section>
-        <section id="about">
-        
-        </section>
-        <section id="contact">
-        
-        </section>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <article>
+          <p>Here are some projects i've done in the past</p>
+        </article>
+        <article>
+          <p>As well as ones i'm working on now</p>
+        </article>
+        <article>
+          <figure class="horiseon-container">
+            <a
+              href="https://loudwhisperer.github.io/symmetrical-adventure-studies/"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/Screen Shot 2022-10-16 at 8.16.36 PM.png"
+                alt="Horiseon Business Solutions Code Refactor"
+              />
+            </a>
+            <figcaption>
+              Horiseon Business Solutions Accesibility Re-factor
+            </figcaption>
+            <p>
+              Here I was given the starter code and asked to update it to<br />
+              current semantic HTML standards to better Search Engine
+              Optimization<br />
+              and make adding alt attributes to each image easy for anyone.<br />
+              We then went ahead and added alt attributes to each image and
+              added<br />
+              comments to the styling so it was easy to follow for those working
+              on it<br />
+              after myself.
+            </p>
+          </figure>
+        </article>
+        <div class="portmenu">
+          <figure>
+            <a>
+              <img src="https://via.placeholder.com/350x150" />
+            </a>
+            <figcaption>Placeholder</figcaption>
+          </figure>
+          <figure>
+            <a>
+              <img src="https://via.placeholder.com/350x150" />
+            </a>
+            <figcaption>Placeholder</figcaption>
+          </figure>
+          <figure>
+            <a>
+              <img src="https://via.placeholder.com/350x150" />
+            </a>
+            <figcaption>Placeholder</figcaption>
+          </figure>
+          <figure>
+            <a>
+              <img src="https://via.placeholder.com/350x150" />
+            </a>
+            <figcaption>Placeholder</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="about">
+        <div id="me">
+        <figure>
+            <img src="./assets/images/1818_1547071729817.jpeg" alt="my face">
+        <figcaption>
+            I am 27, my pronouns are they/them<br>
+            I am an avid hiker sometimes doing 20-30 mile trips that<br>
+            can last a couple of days.<br>
+            I am a game designer and a voice actor as well.<br>
+            I have three pets a chinchilla (anube), and two chihuahua's (Lily and Mini)<br>
+            Currently I am studying in a Full Stack Bootcamp at Denver University<br>
+            and self teaching Cypress E2E testing 
+        </figcaption>
+        </figure>
+        </div>
+      </section>
+      <section id="contact">
+       <aside class="form">
+      <h3>Contact Me</h3>
+      <form>
+        <input type="text" placeholder="E-mail address" />
+        <button>Submit</button>
+      </form>
+    </aside>
+      </section>
     </main>
-</body>
+    <script src="/script/sidenav.js"></script>
+  </body>
 </html>

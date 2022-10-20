@@ -328,13 +328,14 @@ flex: 0 0 35%;
 }
 
 #me figcaption{
-     align-self: center;
+     align-self: flex-end;
     margin-right: 10em;
     border: 3px solid grey;
     padding: 1em;
     width: 25vw; 
     line-height: 25px;
     text-align: center;
+    flex: 0 0 35%;
 }
 .form{
     display: flex;

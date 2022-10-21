@@ -199,11 +199,11 @@ header {
   #me figure {
     display: flex;
     flex-wrap: wrap;
-    flex-flow: row-reverse;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: center;
     margin: auto;
     flex: 0 0 50%;
+    width: 100%;
   }
 
   #me img {
@@ -215,9 +215,9 @@ header {
 
   #me figcaption {
     align-self: flex-end;
-    margin-right: auto;
+    margin: auto;
     border: 3px solid grey;
-    padding: 1em;
+    padding: 2em;
     width: 100%;
     line-height: 25px;
     text-align: center;

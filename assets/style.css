@@ -235,7 +235,7 @@ flex: 0 0 50%;
 .form form{
     padding: 10px;
 }
-/* beginmedia queies to make things fit into different screen sizes */
+/* begin media queies to make things fit into different screen sizes */
 @media only screen and (min-width: 350px) and (max-width: 500px) {
   header {
     border-bottom: 5px solid grey;
@@ -584,4 +584,113 @@ flex: 0 0 50%;
     color: #fff;
     font-size: 35px;
   }
+  #portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 5px solid grey;
+  margin-bottom: 10px;
+}
+
+#portfolio h2 {
+  align-self: flex-start;
+  padding: 20px;
+}
+
+#portfolio p {
+  margin: auto;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.horiseon-container {
+  max-width: 700px;
+  max-height: 700px;
+  float: right;
+  padding: 50px;
+  align-self: flex-end;
+  position: relative;
+}
+.horiseon-container img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid grey;
+}
+.horiseon-container figcaption {
+  position: absolute;
+  bottom: 175px;
+  border: 2px solid white;
+  background-color: #fff;
+  margin-left: 10px;
+}
+.horiseon-container p{
+    border: 2px solid grey;
+    padding: 10px;
+}
+.portmenu {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 725px;
+  margin: auto;
+  padding: 5px;
+}
+.portmenu figure {
+  position: relative;
+  flex: 0 0 35%;
+  margin: 4px auto;
+  border: 3px solid;
+}
+.portmenu figcaption {
+  position: absolute;
+  bottom: 20px;
+  border: 2px solid white;
+  margin-left: 10px;
+}
+#about{
+    padding: 50px;
+margin:auto;
+border-bottom: 5px solid grey;
+}
+#me figure{
+   display: flex;
+   flex-wrap: wrap;
+flex-flow: row-reverse;
+flex-direction: column;
+justify-content: center;  
+margin: auto; 
+flex: 0 0 50%;
+}
+
+
+#me img{
+  border: 2px solid grey;
+ max-width: 100%;
+  max-height: 100%; 
+  align-self: flex-start;
+}
+
+#me figcaption{
+     align-self: flex-end;
+   margin-right: auto;
+    border: 3px solid grey;
+    padding: 1em;
+    width: 100%;
+    line-height: 25px;
+    text-align: center;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form h3{
+    padding: 10px;
+    font-size: 30px;
+}
+.form form{
+    padding: 10px;
+}
 }

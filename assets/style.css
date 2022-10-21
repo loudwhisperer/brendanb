@@ -195,33 +195,34 @@ header {
   margin: auto;
   border-bottom: 5px solid grey;
 }
-#me figure {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row-reverse;
-  justify-content: center;
-  margin: auto;
-  flex: 0 0 50%;
-}
+/* begin about me section styling */
+  #me figure {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row-reverse;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    flex: 0 0 50%;
+  }
 
-/* begin styling for the about me page */
-#me img {
-  border: 2px solid grey;
-  max-width: 750px;
-  max-height: 750px;
-  align-self: flex-start;
-  clear: both;
-}
+  #me img {
+    border: 2px solid grey;
+    max-width: 100%;
+    max-height: 100%;
+    align-self: flex-start;
+  }
 
-#me figcaption {
-  align-self: flex-end;
-  margin-right: 10em;
-  border: 3px solid grey;
-  padding: 1em;
-  width: 25vw;
-  line-height: 25px;
-  text-align: center;
-}
+  #me figcaption {
+    align-self: flex-end;
+    margin-right: auto;
+    border: 3px solid grey;
+    padding: 1em;
+    width: 100%;
+    line-height: 25px;
+    text-align: center;
+    justify-content: center;
+  }
 /* begin styling for contact me page */
 .form {
   display: flex;
@@ -425,32 +426,33 @@ header {
   margin: auto;
   border-bottom: 5px solid grey;
 }
-#me figure {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row-reverse;
-  justify-content: center;
-  margin: auto;
-  flex: 0 0 50%;
-}
+  #me figure {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row-reverse;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    flex: 0 0 50%;
+  }
 
-#me img {
-  border: 2px solid grey;
-  max-width: 750px;
-  max-height: 750px;
-  align-self: flex-start;
-  clear: both;
-}
+  #me img {
+    border: 2px solid grey;
+    max-width: 100%;
+    max-height: 100%;
+    align-self: flex-start;
+  }
 
-#me figcaption {
-  align-self: flex-end;
-  margin-right: 10em;
-  border: 3px solid grey;
-  padding: 1em;
-  width: 25vw;
-  line-height: 25px;
-  text-align: center;
-}
+  #me figcaption {
+    align-self: flex-end;
+    margin-right: auto;
+    border: 3px solid grey;
+    padding: 1em;
+    width: 100%;
+    line-height: 25px;
+    text-align: center;
+    justify-content: center;
+  }
 .form {
   display: flex;
   flex-direction: column;

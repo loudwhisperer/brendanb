@@ -18,15 +18,15 @@ It solves the problem that I currently hadno way of show casing my work and now 
 ## Usage
 You can see my work done so far in the portfolio section pictured below:
 
-    ![Alt text](/assets/images/portfoliocapture.png)
+![screenshot](./assets/images/portfoliocapture.png)
 
 as well as read about me as a person and send me in email in the about me and contact me sections
 
-    ![Alt text](/assets/images/about-and-contact-me.png)
+![screenshot](/assets/images/about-and-contact-me.png)
 
 then you cannot forget my piece de resistance the navigation bar which can be accseced by pressing the button in the top right of the page
 
-    ![Alt text](/assets/images/navmenu.png)
+![screenshot](/assets/images/navmenu.png)
 
 ## License 
 

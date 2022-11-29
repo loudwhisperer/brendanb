@@ -182,12 +182,41 @@ header {
   flex: 0 0 35%;
   margin: 4px auto;
   border: 3px solid;
+  max-width:100%;
 }
 .portmenu figcaption {
   position: absolute;
   bottom: 20px;
   border: 2px solid white;
   margin-left: 10px;
+  background-color: #fff;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; 
+  margin-top: 150px;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 6px;
+  width: 120px;
+  top: 25%;
+  left: 1%;
+  position:absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 /* end portfolio section styling */
 #about {
